@@ -32,7 +32,7 @@ class Song
       @@artists.uniq
     end
 
-    def self.genre_count
+    def self.genre_count  #create a histogram.
       genre_count = {}
       @@genres.each do |genre|
         if genre_count[genre]
@@ -55,39 +55,5 @@ class Song
       end
       artist_count
     end
-
-#binding.pry
-#puts "end"
-
-  # @@artists = []
-  # @@genres =[]
-
-  # def initialize(name, artist, genre)
-  #   @@count += 1
-  #   @@genres << genre
-  #   if !@@artist.include?(artist)
-  #     @@artists << artist
-  #   end
-  # end
-  #
-  # def count
-  #   @@count
-  # end
-  #
-  # def genres
-  #   @@genres
-  # end
-  #
-  # def artists
-  #   @@artists
-  # end
-  #
-  # def genre_count
-  #   @@genres.count # need to count the number of each genre
-  # end
-  #
-  # def artist_count
-  #   @@artists.count
-  # end
 
 end
